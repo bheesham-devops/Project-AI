@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-ai-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: project-ai
+  template:
+    metadata:
+      labels:
+        app: project-ai
+    spec:
+      containers:
+      - name: project-ai-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80

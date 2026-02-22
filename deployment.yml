@@ -21,10 +21,10 @@ spec:
         - name: ENVIRONMENT
           value: production
         - name: API_URL
-          value: https://api.development.project-ai.com
-        - name: DATABASE_URL
-          value: postgres://user:password@db:5432/project_ai_db
-        - name: LOG_LEVEL
-          value: info
-        - name: FEATURE_FLAG_NEW_UI
-          value: "true"
+          value: https://api.devopsteam.com
+        - name: DB_HOST
+          value: db.devopsteam.com
+        - name: DB_USER
+          value: admin
+        - name: DB_PASSWORD
+          value: password123
